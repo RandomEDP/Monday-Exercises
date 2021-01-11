@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter an value: "; //Prints for a value
+    cin >> n; //Asks for a value
+
+    if ( n % 2 == 0) // Finds if the number is odd or even  
+        cout << n << " is an even number.";
+    else
+        cout << n << " is an odd number.";
+
+    return 0;
+}
