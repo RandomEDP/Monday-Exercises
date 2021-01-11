@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  string quote; // Makes a sting var
+  string quote; // Makes a string var
   string name; // Makes a different var
   cout << "What is the quote?!\n"; // Prints "What is the quote"
   cin >> quote; // Asks for a quote
@@ -10,6 +10,47 @@ int main() {
   cin >> name; // Asks for a name
   cout << name + " says: '"+ quote + "'"; // Prints the info together
 }
+---------------------------------------------------------------------------
+// C++ program to convert temperature from fahrenheit to celcius
+ 
+#include <iostream>
+using namespace std;
+  
+int main() {
+    float fahren, celsius;
+  
+    cout << "Enter the temperature in fahrenheit\n";
+    cin >> fahren;
+  
+    // convert fahreneheit to celsius 
+    // Subtract 32, then multiply it by 5, then divide by 9
+     
+    celsius = 5 * (fahren - 32) / 9;
+  
+    cout << fahren <<" Fahrenheit is equal to " << celsius <<" Centigrade";
+      
+    return 0;
+}
+--------------------------------------------------------------------------
+ #include <iostream>
+using namespace std;
+  
+int main() {
+    float length, width, total;
+  
+    cout << "What is the length of the room in feet?\n";
+    cin >> length;
+    cout << "What is the width of the room in feet?\n";
+    cin >> width;
+
+    total = width * length;
+
+    cout << "Your room’s dimension is " << length << " by " << width << " feet, the area is:\n" << total << " square foot \n";
+
+    cout << total / 10.764 << " square meters\n";
+      
+    return 0;
+}
 
 
-https://repl.it/join/iellqzka-ethandp
+
