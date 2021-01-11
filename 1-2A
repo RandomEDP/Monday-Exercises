@@ -5,9 +5,9 @@ int main() {
   string quote; // Makes a string var
   string name; // Makes a different var
   cout << "What is the quote?!\n"; // Prints "What is the quote"
-  cin >> quote; // Asks for a quote
+  getline(cin, quote);
   cout << "What is the name?!\n"; // Prints "What is the name"
-  cin >> name; // Asks for a name
+  getline(cin, name);
   cout << name + " says: '"+ quote + "'"; // Prints the info together
 }
 ---------------------------------------------------------------------------
