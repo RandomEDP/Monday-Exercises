@@ -37,3 +37,25 @@ int main()
     return 0;
 }
 ---------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float age, restingPulse, i,intesity;
+
+    cout << "Please enter your resting pulse: ";
+    cin >> restingPulse;
+    cout << "Please enter your age: ";
+    cin >> age;
+
+    cout << "Resting Pulse:" << restingPulse << "    Age:" << age;
+
+    cout << "\nIntesity        Rate\n";
+    for(i = 40; i < 100; i+=5){
+      intesity = i/100;
+      cout << i << "%" << "        " << (((220-age)-restingPulse)*intesity)+restingPulse << "bpm \n";
+    }
+
+
+}
