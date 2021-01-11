@@ -15,3 +15,25 @@ int main()
 
     return 0;
 }
+---------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age, retire, retireYear, left;
+
+    cout << "Please enter your age? "; 
+    cin >> age; 
+    cout << "At what age would you like to retire? "; 
+    cin >> retire; 
+
+    left = retire - age;
+
+    retireYear = left + 2021;
+
+    cout << "The current year is 2021, can retire in " << retireYear << " you have " << left<< " years remaining.";
+
+    return 0;
+}
+---------------------------------------------------------------
