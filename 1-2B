@@ -30,7 +30,12 @@ int main()
 
     left = retire - age;
 
-    retireYear = left + 2021;
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
+    int year;
+    year = 1900 + ltm->tm_year;
+     
+    retireYear = left + year;
 
     cout << "The current year is 2021, can retire in " << retireYear << " you have " << left<< " years remaining.";
 
