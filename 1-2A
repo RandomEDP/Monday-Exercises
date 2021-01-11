@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  string quote; // Makes a sting var
+  string name; // Makes a different var
+  cout << "What is the quote?!\n"; // Prints "What is the quote"
+  cin >> quote; // Asks for a quote
+  cout << "What is the name?!\n"; // Prints "What is the name"
+  cin >> name; // Asks for a name
+  cout << name + " says: '"+ quote + "'"; // Prints the info together
+}
