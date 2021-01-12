@@ -1,1 +1,66 @@
-/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+
+    cout << "Enter an value: "; //Prints for a value
+    cin >> n; //Asks for a value
+
+    if ( n % 2 == 0) // Finds if the number is odd or even  
+        cout << n << " is an even number.";
+    else
+        cout << n << " is an odd number.";
+
+    return 0;
+}
+---------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age, retire, retireYear, left;
+
+    cout << "Please enter your age? "; 
+    cin >> age; 
+    cout << "At what age would you like to retire? "; 
+    cin >> retire; 
+
+    left = retire - age;
+
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
+    int year;
+    year = 1900 + ltm->tm_year;
+     
+    retireYear = left + year;
+
+    cout << "The current year is 2021, can retire in " << retireYear << " you have " << left<< " years remaining.";
+
+    return 0;
+}
+---------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float age, restingPulse, i,intesity;
+
+    cout << "Please enter your resting pulse: ";
+    cin >> restingPulse;
+    cout << "Please enter your age: ";
+    cin >> age;
+
+    cout << "Resting Pulse:" << restingPulse << "    Age:" << age;
+
+    cout << "\nIntesity        Rate\n";
+    for(i = 40; i < 100; i+=5){
+      intesity = i/100;
+      cout << i << "%" << "        " << (((220-age)-restingPulse)*intesity)+restingPulse << "bpm \n";
+    }
+
+
+}
